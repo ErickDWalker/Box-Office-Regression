@@ -1,5 +1,4 @@
 # The Anatomy of Box Office Blow-Outs
----
 
 # Overview
 ---
