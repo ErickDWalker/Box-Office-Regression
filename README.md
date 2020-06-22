@@ -13,12 +13,8 @@ Data is drawn from two main sources: **IMDb Pro** and **The-Numbers.com**. Prior
 
 BeautifulSoup was used to scrape key features from both sites, and in the case of IMDB Pro, Selenium was used to login, as an account is required to access the data. After pulling in this data, it was aggregated into a Pandas DataFrame and cleansed (e.g. removing sumbols & punctuation, and limiting lists of actors / directors to one name). 
 
-Most features were sourced from IMDB Pro, however The-Numbers was used for budget data, as well as lists of popular actors, directors, and production companies. For budget data specifically, The-Numbers was considered more accurate and complete than the figures (or lackthereof) provided by IMDB Pro.
+Most features were sourced from IMDB Pro, however The-Numbers was used for budget data, as well as lists of popular actors, directors, and production companies. For budget data specifically, The-Numbers was considered more accurate and complete than the figures provided by IMDB Pro.
 
 Methodology
 ---
-Features were added one-by-one to the linear regression model, with each step involving a check on whether they improved the model's R\super{2} score
-
-
-Results
----
+Features were inspected to determine if any transformations were required before modeling. In addition, features were added one-by-one to the linear regression model, with each step involving a check on whether the feature improved the model's R<sup>2</sup>.
